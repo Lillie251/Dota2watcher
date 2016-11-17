@@ -27,7 +27,8 @@ userlist = ["lillie251",
             "awai_o",
             "kaerukun4365",
             "silverjumper123",
-            "ume_dota"]
+            "ume_dota",
+            "heromuu"]
 
 userdict = {"lillie251": 0,
             "baseballdogs": 0,
@@ -44,7 +45,8 @@ userdict = {"lillie251": 0,
             "awai_o": 0,
             "kaerukun4365": 0,
             "silverjumper123": 0,
-            "ume_dota": 0}
+            "ume_dota": 0,
+            "heromuu": 0}
 
 NUM1 = 1
 
