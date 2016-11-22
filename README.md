@@ -15,3 +15,7 @@ OAuthのライブラリは<https://github.com/requests/requests-oauthlib>
   
 コード中にAPIトークンを書かないようにする  
 →環境変数設定してそこから持ってくるようにする
+
+# メモ
+2月くらいいTwitch APIの使用が変わる
+https://blog.twitch.tv/action-required-twitch-api-version-update-f3a21e6c3410#.hupl0lrcd
