@@ -14,8 +14,11 @@ OAuthのライブラリは<https://github.com/requests/requests-oauthlib>
 →配信ゲームでフィルターかけてDota2配信しかツイートしないようにする  
   
 コード中にAPIトークンを書かないようにする  
-→環境変数設定してそこから持ってくるようにする
+→環境変数設定してそこから持ってくるようにする  
+  
+なんかの拍子にカウント０になって連続ツイートされる  
+→
 
 # メモ
-2月くらいいTwitch APIの使用が変わる
+2月くらいにTwitch APIの仕様が変わる  
 https://blog.twitch.tv/action-required-twitch-api-version-update-f3a21e6c3410#.hupl0lrcd
