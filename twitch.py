@@ -5,7 +5,7 @@ from datetime import datetime
 import requests
 
 twitch_api = 'https://api.twitch.tv/kraken/streams/'
-client_id = '?client_id='  #Twitchのclient_id
+client_id = '?client_id='  # Twitchのclient_id
 username = ""
 
 
@@ -65,7 +65,7 @@ def getTitle(infoStreamChannel):
 
 
 # 配信のURLを取得するメソッド
-def getUrl(infoStreamChannel):    
+def getUrl(infoStreamChannel):
     try:
         infostr = infoStreamChannel
         streamUrl = infostr.get("url")
@@ -73,3 +73,14 @@ def getUrl(infoStreamChannel):
         print(datetime.now().strftime("[%Y/%m/%d %H:%M:%S]") + "[ERROR] twitch.py getUrl()")
     finally:
         return streamUrl
+
+
+# 配信中のゲームタイトルを取得するメソッド
+def getGameTitle(infoStreamChannel):
+    try:
+        infostr = infoStreamChannel
+        streamGameTitle = infostr.get("game")
+    except Exception:
+        print(datetime.now().strftime("[%Y/%m/%d %H:%M:%S]") + "[ERROR] twitch.py getGame()")
+    finally:
+        return streamGameTitle

@@ -22,7 +22,7 @@ def getBroadcastTime(createTime):
         streamTime = (epo_time_t2 - epo_time_t1)
 
         # 秒なので60で割ることで分に変換。小数点を切り捨てる
-        streamMinute = math.floor(streamTime/60)
+        streamMinute = math.floor(streamTime / 60)
     except Exception:
         print(datetime.now().strftime("[%Y/%m/%d %H:%M:%S]") +
               "[ERROR] broadcastTime.py getBroadcastTime()")
@@ -31,6 +31,6 @@ def getBroadcastTime(createTime):
 
 
 # 現在の時間を取得するメソッド
-def getTimeNow(self):
+def getTimeNow():
     timeNow = datetime.now().strftime("[%Y/%m/%d %H:%M:%S]")
-    return TimeNow
+    return timeNow
