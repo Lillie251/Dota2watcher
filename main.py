@@ -30,7 +30,8 @@ USER_LIST = ["lillie251",
              "ume_dota",
              "heromuu",
              "zappa3594",
-             "17uu"]
+             "17uu",
+             "maouyakumo2"]
 
 USER_DICT = {"lillie251": 0,
              "baseballdogs": 0,
@@ -50,7 +51,8 @@ USER_DICT = {"lillie251": 0,
              "ume_dota": 0,
              "heromuu": 0,
              "zappa3594": 0,
-             "17uu": 0}
+             "17uu": 0,
+             "maouyakumo2": 0}
 
 print(datetime.now().strftime("[%Y/%m/%d %H:%M:%S]") + "[INFO] " + "Program start")
 print(datetime.now().strftime("[%Y/%m/%d %H:%M:%S]") + "[INFO] " + "Setting start")
@@ -90,6 +92,86 @@ while True:
                     casterName = twitch.getUsername(infoStreamChannel)  # 配信者のTwitchアカウントの名前を取得する
                     streamTitle = twitch.getTitle(infoStreamChannel)  # 配信タイトルを取得する
                     streamUrl = twitch.getUrl(infoStreamChannel)  # 配信のURLを取得する
+
+                    if USER_DICT[USER_LIST[var]] == 22:
+                        if streamNow < 1035:
+                            if streamNow >= 990:
+                                tweet.doTweetTime(casterName, streamTitle, streamUrl, streamNow)
+                                USER_DICT[USER_LIST[var]] = 23
+                        else:
+                            USER_DICT[USER_LIST[var]] = 23
+
+                    if USER_DICT[USER_LIST[var]] == 21:
+                        if streamNow < 990:
+                            if streamNow >= 945:
+                                tweet.doTweetTime(casterName, streamTitle, streamUrl, streamNow)
+                                USER_DICT[USER_LIST[var]] = 22
+                        else:
+                            USER_DICT[USER_LIST[var]] = 22
+
+                    if USER_DICT[USER_LIST[var]] == 20:
+                        if streamNow < 945:
+                            if streamNow >= 900:
+                                tweet.doTweetTime(casterName, streamTitle, streamUrl, streamNow)
+                                USER_DICT[USER_LIST[var]] = 21
+                        else:
+                            USER_DICT[USER_LIST[var]] = 21
+
+                    if USER_DICT[USER_LIST[var]] == 19:
+                        if streamNow < 900:
+                            if streamNow >= 855:
+                                tweet.doTweetTime(casterName, streamTitle, streamUrl, streamNow)
+                                USER_DICT[USER_LIST[var]] = 20
+                        else:
+                            USER_DICT[USER_LIST[var]] = 20
+
+                    if USER_DICT[USER_LIST[var]] == 18:
+                        if streamNow < 855:
+                            if streamNow >= 810:
+                                tweet.doTweetTime(casterName, streamTitle, streamUrl, streamNow)
+                                USER_DICT[USER_LIST[var]] = 19
+                        else:
+                            USER_DICT[USER_LIST[var]] = 19
+
+                    if USER_DICT[USER_LIST[var]] == 17:
+                        if streamNow < 810:
+                            if streamNow >= 765:
+                                tweet.doTweetTime(casterName, streamTitle, streamUrl, streamNow)
+                                USER_DICT[USER_LIST[var]] = 18
+                        else:
+                            USER_DICT[USER_LIST[var]] = 18
+
+                    if USER_DICT[USER_LIST[var]] == 16:
+                        if streamNow < 765:
+                            if streamNow >= 720:
+                                tweet.doTweetTime(casterName, streamTitle, streamUrl, streamNow)
+                                USER_DICT[USER_LIST[var]] = 17
+                        else:
+                            USER_DICT[USER_LIST[var]] = 17
+
+                    if USER_DICT[USER_LIST[var]] == 15:
+                        if streamNow < 720:
+                            if streamNow >= 675:
+                                tweet.doTweetTime(casterName, streamTitle, streamUrl, streamNow)
+                                USER_DICT[USER_LIST[var]] = 16
+                        else:
+                            USER_DICT[USER_LIST[var]] = 16
+
+                    if USER_DICT[USER_LIST[var]] == 14:
+                        if streamNow < 675:
+                            if streamNow >= 630:
+                                tweet.doTweetTime(casterName, streamTitle, streamUrl, streamNow)
+                                USER_DICT[USER_LIST[var]] = 15
+                        else:
+                            USER_DICT[USER_LIST[var]] = 15
+
+                    if USER_DICT[USER_LIST[var]] == 13:
+                        if streamNow < 630:
+                            if streamNow >= 585:
+                                tweet.doTweetTime(casterName, streamTitle, streamUrl, streamNow)
+                                USER_DICT[USER_LIST[var]] = 14
+                        else:
+                            USER_DICT[USER_LIST[var]] = 14
 
                     if USER_DICT[USER_LIST[var]] == 12:
                         if streamNow < 585:
